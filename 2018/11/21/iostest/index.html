@@ -7,18 +7,18 @@
   
   <title>iOS自动化性能采集 | xinxi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言对于iOS总体生态是比较封闭的,相比Android没有像adb这种可以查看内存、cpu的命令.在日常做性能测试,需要借助xcode中instruments查看内存、cpu等数据. 但是借助instruments比较麻烦、又不能提供命令行.在持续集成中,很难时时的监控app的性能指标.并且现在app发版一般是2周左右,留给做专项测试的时间更少了,那么做核心场景性能测试,肯定是来不及的. 所以需要">
+  <meta name="description" content="本文介绍下iOS自动化性能采集,具体内容点击详情查看">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS自动化性能采集">
 <meta property="og:url" content="http://yoursite.com/2018/11/21/iostest/index.html">
 <meta property="og:site_name" content="xinxi">
-<meta property="og:description" content="前言对于iOS总体生态是比较封闭的,相比Android没有像adb这种可以查看内存、cpu的命令.在日常做性能测试,需要借助xcode中instruments查看内存、cpu等数据. 但是借助instruments比较麻烦、又不能提供命令行.在持续集成中,很难时时的监控app的性能指标.并且现在app发版一般是2周左右,留给做专项测试的时间更少了,那么做核心场景性能测试,肯定是来不及的. 所以需要">
+<meta property="og:description" content="本文介绍下iOS自动化性能采集,具体内容点击详情查看">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/uploads/photo/2018/13f5500a-af4f-4d39-9319-07612f2423c4.jpg!large">
-<meta property="og:updated_time" content="2018-11-21T11:22:13.595Z">
+<meta property="og:updated_time" content="2018-11-21T11:28:52.988Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS自动化性能采集">
-<meta name="twitter:description" content="前言对于iOS总体生态是比较封闭的,相比Android没有像adb这种可以查看内存、cpu的命令.在日常做性能测试,需要借助xcode中instruments查看内存、cpu等数据. 但是借助instruments比较麻烦、又不能提供命令行.在持续集成中,很难时时的监控app的性能指标.并且现在app发版一般是2周左右,留给做专项测试的时间更少了,那么做核心场景性能测试,肯定是来不及的. 所以需要">
+<meta name="twitter:description" content="本文介绍下iOS自动化性能采集,具体内容点击详情查看">
 <meta name="twitter:image" content="http://yoursite.com/uploads/photo/2018/13f5500a-af4f-4d39-9319-07612f2423c4.jpg!large">
   
     <link rel="alternate" href="/atom.xml" title="xinxi" type="application/atom+xml">
@@ -88,7 +88,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>对于iOS总体生态是比较封闭的,相比Android没有像adb这种可以查看内存、cpu的命令.在日常做性能测试,需要借助xcode中instruments查看内存、cpu等数据.</p>
+        <p>本文介绍下iOS自动化性能采集,具体内容点击详情查看</p>
+<a id="more"></a>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>对于iOS总体生态是比较封闭的,相比Android没有像adb这种可以查看内存、cpu的命令.在日常做性能测试,需要借助xcode中instruments查看内存、cpu等数据.</p>
 <p>但是借助instruments比较麻烦、又不能提供命令行.在持续集成中,很难时时的监控app的性能指标.并且现在app发版一般是2周左右,留给做专项测试的时间更少了,那么做核心场景性能测试,肯定是来不及的.</p>
 <p>所以需要借助一些自动化工具来减轻手工采集性能指标的工作量.</p>
 <h1 id="性能采集项"><a href="#性能采集项" class="headerlink" title="性能采集项"></a>性能采集项</h1><p>app中基本性能采集项,内存、cpu、fps、电量等,因为自动化采集中手机设备是插着电脑充电的,所以不能采集电量数据.</p>
@@ -128,12 +130,11 @@
 <h1 id="如何在持续集成中使用"><a href="#如何在持续集成中使用" class="headerlink" title="如何在持续集成中使用"></a>如何在持续集成中使用</h1><p>monkey和UI自动化中使用,最终会发送一份性能报告.</p>
 <h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>虽然iOS生态封闭,但是对于开发者和测试者还是有一些空间可以利用的.</p>
 <p>iOS测试一直都是一个难点,难懂的oc语法和iOS整体框架.如果你开始慢慢接触iOS,会发现iOS测试也并不是那么难,需要一点耐心和一点专心而已.</p>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/21/iostest/" data-id="cjor2wam40001r2fypy8sfx1e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/21/iostest/" data-id="cjor354jt00005mfyevufbsld" class="article-share-link">Share</a>
       
       
     </footer>
